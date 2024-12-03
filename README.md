@@ -10,6 +10,7 @@ A Gmail-inspired email application built with the MERN stack to replicate key fe
 - Inbox management with email listing.
 - Email composition and sending functionality.
 - Search and filter emails.
+- Sleek UI built with Material-UI components.
 - Backend REST API with MongoDB integration.
 
 ## Technologies Used
@@ -18,6 +19,7 @@ A Gmail-inspired email application built with the MERN stack to replicate key fe
 2. **Express** - Backend framework for building REST APIs.
 3. **React** - Frontend library for creating a responsive UI.
 4. **Node.js** - Server environment for running the backend.
+5. **Material-UI (MUI)** - React component library for building user interfaces with a clean design.
 
 ## Getting Started
 
