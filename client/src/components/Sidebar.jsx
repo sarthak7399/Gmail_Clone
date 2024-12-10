@@ -1,6 +1,7 @@
 import { Drawer } from "@mui/material";
 import SideBarContent from "./SideBarContent";
 
+// openDrawer is used as object destructuring
 const Sidebar = ({ openDrawer }) => {
   return (
     <Drawer

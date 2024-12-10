@@ -4,6 +4,7 @@ import CreateIcon from "@mui/icons-material/Create";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import SIDEBAR_DATA from "../config/sidebar.config";
+import ComposeMail from "./ComposeMail";
 
 const ComposeButton = styled(Button)({
   background: "#C2E7FF",
@@ -29,20 +30,19 @@ const Container = styled(Box)({
 const SideBarContent = () => {
   return (
     <Container>
-      <Box>
-        <ComposeButton>
-          <CreateIcon />
-          Compose
-        </ComposeButton>
-        <List>
-          {SIDEBAR_DATA.map((item) => (
-            <ListItem button key={item.name}>
-              <item.icon fontSize="small" />
-              {item.title}
-            </ListItem>
-          ))}
-        </List>
-      </Box>
+      <ComposeButton>
+        <CreateIcon />
+        Compose
+      </ComposeButton>
+      <List>
+        {SIDEBAR_DATA.map((item) => (
+          <ListItem button key={item.name}>
+            <item.icon fontSize="small" />
+            {item.title}
+          </ListItem>
+        ))}
+      </List>
+      <ComposeMail />
     </Container>
   );
 };
